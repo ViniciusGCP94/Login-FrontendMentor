@@ -7,7 +7,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    background-color: #222743;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,18 +18,18 @@ body{
 }
 
 section{
-    width: 55%;
+    width: 50%;
     height: 70%;
     display: flex;
     border: 1px solid #d9d9d9;
     background-color: #d9d9d9;
-    border-radius: 30px;
+    border-radius: 20px;
 
 }
 
 h1 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -37,16 +37,16 @@ h1 {
     width: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 25px 45px;
+    justify-content: center;
+    padding: 25px 25px;
+    margin-left: 15px;
 }
 
 form {
     display: flex;
-    margin-top: 10px;
-    height: 150px;
+    justify-content: center;
     flex-direction: column;
-    padding: 5px;
+    position: relative;
 }
 
 ul {
@@ -74,22 +74,35 @@ label {
 input {
     font-size: 14px;
     padding: 10px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #d9d9d9;
     border-radius: 10px;
 }
 
-button{
+
+input:invalid {
+    border: 2px solid #FF6155;
+  }
+
+.submit {
     font-size: 16px;
     font-weight: 700;
     color: white;
-    background-color: #FF6257;
+    background-color: #222743;
     padding: 10px 20px;
-    border: 1px solid #FF6257;
+    border: 1px solid  #222743;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .image {
     width: 45%;
-    border: 1px solid red;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.image svg {
+    width: 97%;
 }
