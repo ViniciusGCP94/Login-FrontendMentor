@@ -1,11 +1,16 @@
 const email = document.getElementById("email");
 const form = document.querySelector("form");
 
-//Evento de envio de formulário
 form.addEventListener("submit", (event) => {
   if (email.value === "") {
-    ("Preencha com algum email válido!");
+    alert("Preencha o campo de email");
   }
-  //Para não recarregar a página e os valores nos inputs permanecerem
+
   event.preventDefault();
 });
+
+function validatorEmail(email) {
+  let emailPattern =
+    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  return emailPattern.test(email);
+}

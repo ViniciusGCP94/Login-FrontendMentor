@@ -106,3 +106,7 @@ input:invalid {
 .image svg {
     width: 97%;
 }
+
+#tela-agradecimento {
+    display: none;
+  }
