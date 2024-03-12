@@ -18,6 +18,7 @@ body{
 }
 
 section{
+    min-width: 800px;
     width: 50%;
     height: 70%;
     display: flex;
@@ -33,7 +34,7 @@ h1 {
     text-align: center;
 }
 
-.Form {
+.signup-container {
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -42,16 +43,15 @@ h1 {
     margin-left: 15px;
 }
 
-form {
+.form-content{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    position: relative;
 }
 
 ul {
-    margin-top: 10px;
+    margin: 10px 0 5px;
 }
+
 li {
     display: flex;
     align-items: center;
@@ -62,29 +62,47 @@ li {
 
 li > svg {
     margin-bottom: 5px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
-input {
+.form-content input {
     font-size: 14px;
     padding: 10px 20px;
-    margin-bottom: 10px;
-    border: 1px solid #d9d9d9;
+    border: none;
     border-radius: 10px;
 }
 
+.form-content input:focus{
+    border: none;
+}
 
-input:invalid {
+
+.form-content.error input {
+    background-color: #ffb9b4;
     border: 2px solid #FF6155;
   }
 
-.submit {
+.form-content a {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+.form-content.error a {
+    color: #d90429;
+    visibility: visible;
+}
+
+button {
+    width: 100%;
     font-size: 16px;
     font-weight: 700;
     color: white;

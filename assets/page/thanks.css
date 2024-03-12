@@ -31,8 +31,12 @@ section h1 {
     text-align: center;
 }
 
-#mensagem{
+p{
     font-size: 18px;
+    font-weight: 600;
+    color: #c92216;
+    text-align: center;
+    margin-top: 30px;
 }
 
 #email{
