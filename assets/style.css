@@ -18,10 +18,10 @@ body{
 }
 
 section{
-    min-width: 800px;
-    width: 50%;
-    height: 70%;
+    width: 55%;
+    height: 65%;
     display: flex;
+    align-items: center;
     border: 1px solid #d9d9d9;
     background-color: #d9d9d9;
     border-radius: 20px;
@@ -39,7 +39,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 25px 25px;
+    padding: 25px;
     margin-left: 15px;
 }
 
@@ -115,16 +115,116 @@ button {
 
 .image {
     width: 45%;
+    height: 95%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .image svg {
-    width: 97%;
+    width: 100%;
+    border-radius: 20px;
 }
 
 #tela-agradecimento {
     display: none;
+  }
+
+  @media (max-width:1239px) {
+    h1{
+        font-size: 40px;
+    }
+    
+  }
+
+  @media (max-width:1080px) {
+    section{
+        width: 60%;
+    }
+
+    .signup-container{
+        margin-left: 0;
+        padding: 25px 15px;
+    }
+
+    p{
+        text-align: center;
+    }
+    
+  }
+
+  @media (max-width:945px) {
+
+    section{
+        width: 65%;
+    }
+
+    .signup-container{
+        padding: 20px 10px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .form-content a{
+        margin-bottom: 3px;
+    }
+
+  }
+
+  @media (max-width:850px) {
+    
+    section{
+        width: 90%;
+        height: 40%;
+    }
+
+    .signup-container{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    ul{
+        margin-left: 20px;
+    }
+
+    form{
+        margin-left: 20px;
+    }
+
+    .image{
+        margin-left: 20px;
+    }
+
+  }
+
+  @media (max-width:500px) {
+    section{
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 80%;
+    }
+
+    .signup-container{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    form {
+        margin: 0 20px;
+    }
+
+    .image{
+        width: 90%;
+        margin: 10px 0;
+    }
+
   }
